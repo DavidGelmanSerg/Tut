@@ -1,0 +1,45 @@
+﻿<Window x:Class="JobLink.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JobLink"
+        mc:Ignorable="d"
+        Title="Job Link" Height="500" Width="1000">
+    <Grid Background="DeepSkyBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*"></RowDefinition>
+            <RowDefinition Height="273*"></RowDefinition>
+            <RowDefinition Height="78*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="192*"></ColumnDefinition>
+            <ColumnDefinition Width="417*"></ColumnDefinition>
+            <ColumnDefinition Width="191*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Background="White" Margin="0,3,0,0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"></RowDefinition>
+                <RowDefinition Height="25*"></RowDefinition>
+                <RowDefinition Height="77*"></RowDefinition>
+                <RowDefinition Height="77*"></RowDefinition>
+                <RowDefinition Height="22*"></RowDefinition>
+                <RowDefinition Height="50*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="Login_Label" Content="Логин&#xD;&#xA;" Margin="170,1,4,0" Grid.Row="2" VerticalAlignment="Top" Height="26" FontSize="14" Grid.ColumnSpan="2"/>
+            <Label Content="Пароль&#xD;&#xA;" Grid.Row="2" VerticalAlignment="Top" Height="29" Margin="170,77,8,0" Grid.RowSpan="2" FontSize="14" Grid.ColumnSpan="2"/>
+            <Button Grid.Column="1" Content="Войти" HorizontalAlignment="Center" Margin="0,5,0,0" Grid.Row="5" VerticalAlignment="Top" Background="DeepSkyBlue" BorderBrush="White" Foreground="White" FontWeight="Bold" Width="92" Height="30" Click="Button_Click"/>
+            <Button x:Name="Toggle_to_in" Content="Вход" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Background="DeepSkyBlue" BorderBrush="White" Foreground="White" FontWeight="Bold" Width="62" Height="30" FontSize="16"/>
+            <Button x:Name="Toggle_to_in_Copy" Content="Регистрация" HorizontalAlignment="Left" Margin="77,0,0,0" VerticalAlignment="Center" Background="White" BorderBrush="White" Foreground="DeepSkyBlue" FontWeight="Bold" Width="109" Height="30" FontSize="16" Grid.ColumnSpan="2"/>
+            <TextBox Grid.Column="1" Margin="0,32,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Height="25" Background="#FFDDDDDD" BorderBrush="White"/>
+            <TextBox  Margin="0,34,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="174" Height="25" Background="#FFDDDDDD" BorderBrush="White" Grid.Column="1"/>
+        </Grid>
+
+    </Grid>
+</Window>
